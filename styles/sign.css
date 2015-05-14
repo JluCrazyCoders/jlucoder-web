@@ -1,0 +1,17 @@
+.signup, .signin {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+.sign-input {
+    margin-bottom: 15px;
+}
+.signup-heading {
+    margin-bottom: 30px;
+}
+.tips {
+    float: left;
+}
+.tips-info {
+    color: #aaa;
+}

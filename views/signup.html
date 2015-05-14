@@ -1,0 +1,24 @@
+<div class="signup">
+    <form>
+        <h2 class="signup-heading">欢迎加入JLU CODER！</h2>
+        <div class="sign-input">
+            <span class="tips tips-{{emailLevel}}">{{emailMsg}}&nbsp;</span>
+            <input type="email" id="inputEmail" class="form-control" placeholder="请输入邮箱地址" ng-model="email" ng-focus="showTips('email')" ng-blur="vilidateTips('email')" required>
+        </div>
+        <div class="sign-input">
+            <span class="tips tips-{{passwordLevel}}">{{passwordMsg}}&nbsp;</span>
+            <input type="password" id="inputPassword" class="form-control" placeholder="请输入密码"
+                ng-model="password" ng-focus="showTips('password')" ng-blur="vilidateTips('password')" required>
+        </div>
+        <div class="sign-input">
+            <span class="tips tips-{{repeatPasswordLevel}}">{{repeatPasswordMsg}}&nbsp;</span>
+            <input type="password" id="repeatPassword" class="form-control" placeholder="请重复密码"
+                 ng-focus="showTips('repeatPassword')" ng-blur="vilidateTips('repeatPassword')" required>
+        </div>
+        <div class="sign-input">
+            <button class="btn btn-lg btn-primary btn-block" ng-class="{disabled: invalidate}" type="submit" ng-click="signup()">
+                Sign Up !
+            </button>
+        </div>
+    </form>
+</div>
